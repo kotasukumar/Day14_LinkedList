@@ -11,5 +11,8 @@ public class Main {
         myLinkedList.add(mySecondNode);
         myLinkedList.add(myThirdNode);
         myLinkedList.printMyNode();
+        System.out.println("After removing");
+        myLinkedList.pop(myFirstNode);
+        myLinkedList.printMyNode();
     }
 }

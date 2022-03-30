@@ -1,5 +1,7 @@
 package linkedlist;
 
+import javax.swing.*;
+
 public class MyLinkedList {
     private INode head;
     private INode tail;
@@ -20,6 +22,12 @@ public class MyLinkedList {
             this.head = newNode;
             this.head.setNext(tempNode);
         }
+    }
+
+    public INode pop(INode popNode){
+        INode tempNode = this.head;
+        this.head = head.getNext();
+        return tempNode;
     }
 
     public void printMyNode(){
