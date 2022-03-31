@@ -24,10 +24,10 @@ public class MyLinkedList {
         }
     }
 
-    public void search(INode searchElement){
+    public void search(INode searchElement) {
         INode temp = this.tail;
-                this.tail = searchElement;
-                this.tail.setNext(temp);
+        this.tail = searchElement;
+        this.tail.setNext(temp);
     }
 
     public void printMyNode() {
